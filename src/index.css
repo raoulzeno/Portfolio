@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to right, rgba(44,37,132,1), rgba(65,224,138,1));
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
   font-family: 'Raleway', sans-serif;
   color: #FFFFFF;
 }
@@ -15,4 +18,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 80% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

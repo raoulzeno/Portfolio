@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react';
-import './App.css';
+import '../containers/App.css';
 
 
 const zens = ["development.", "your website.", "programming.", "web design."];
