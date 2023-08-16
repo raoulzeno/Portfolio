@@ -51,7 +51,7 @@
 .container {
   display: grid;
   grid-template-columns: 40px auto 40px;
-  grid-template-rows: 45vh 15vh 15vh 25vh;
+  grid-template-rows: 45vh 15vh 15vh 20vh 5vh;
 }
 
 .landingHeader {
@@ -89,13 +89,13 @@
   z-index: -1;
 }
 
-#arrowDown {
+/*#arrowDown {
  grid-column: 2 / 3;
  grid-row: 4/5;
  justify-self: center;
  align-self: end;
  animation: 3s bounce infinite;
-}
+}*/
 
 @keyframes bounce {
   0% {
@@ -209,9 +209,24 @@
 }
 
 .skillContainer {
-  height: 150px;
-  width: 150px;
-  background-color: blue;
+  height: 180px;
+  width: 180px;
+  background-image: linear-gradient(to right, rgba(136,250,168,1), rgba(44,192,255,1));
   grid-column: 1/2;
   grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+  z-index: 5;
+}
+
+.arrowDownButton {
+  width: 120px;
+  height: 68.4px;
+  background-color: transparent;
+  border: none;
+   grid-column: 2 / 3;
+  grid-row: 4/5;
+  justify-self: center;
+  align-self: end;
+  animation: 3s bounce infinite;
 }

@@ -8,7 +8,9 @@ function App() {
       <div id='home'>
         <LandingPage />
       </div>
+      <div id="toolbelt">
         <ToolBelt />
+      </div>
     </div>
   );
 }
