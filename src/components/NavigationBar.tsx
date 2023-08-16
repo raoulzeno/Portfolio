@@ -4,9 +4,11 @@ import { useState } from 'react';
 
 const NavigationBar = () => {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
+	const [isActive, setIsActive] = useState(false);
 
-	const setClassNameList = (item, i) => {
-		item[i].className = "listItems colorWhenSelected";
+
+	const handleClick = event => {
+		setIsActive(current => !current);
 	}
 
 	let subMenus = [{
@@ -34,7 +36,7 @@ const NavigationBar = () => {
 		id: 5,
 		className: "listItems"}];
 
-	const listItems = subMenus.map(listItem => <li key={listItem.id} onClick={() => setClassNameList()} className={listItem.className}>{listItem.name}</li>);
+	const listItems = subMenus.map(listItem => <li key={listItem.id} onClick={handleClick} className={isActive ? "listItems colorWhenSelected" : "listItems"}>{listItem.name}</li>);
 
 	return (
 		<nav className='navigation'>
