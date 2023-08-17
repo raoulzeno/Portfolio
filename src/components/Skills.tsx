@@ -3,7 +3,10 @@ import '../containers/App.css';
 
 const Skills = () => {
 	return(
-			<div className='skillContainer'></div>
+			<div className='skillContainer'>
+				
+
+			</div>
 	)
 }
 

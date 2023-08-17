@@ -8,7 +8,7 @@ const LandingPage = () => {
 	return (
 		<div className='container'>
 			<CustomParticles className="particles" />
-	      	<LandingHeader />
+	      	<LandingHeader id="home"/>
 	      	<h2 className='headerSub'>I'm Raoul <span id='zeno'>Zeno</span> Huber. <br/> A web developer.</h2>
 	      	<ArrowDown />
 	    </div>
