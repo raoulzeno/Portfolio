@@ -21,6 +21,7 @@ export const StyledMenu = styled.nav`
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 2rem;
+		padding: .5rem .5rem;
 		color: white;
 		padding: .5rem 0;
 	}
