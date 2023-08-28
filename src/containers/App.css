@@ -50,8 +50,9 @@
 
 .container {
   display: grid;
-  grid-template-columns: 40px auto 40px;
+  grid-template-columns: 40px 1fr 40px;
   grid-template-rows: 45vh 15vh 15vh 20vh 5vh;
+  position: relative;
 }
 
 .landingHeader {
@@ -85,7 +86,7 @@
 
 .particles {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
 }
 
@@ -116,22 +117,20 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60px 80px 1fr 1fr 1fr;
   z-index: 5;
+  max-width: 100%;
 }
 
-.navigation {
-  display: none;
-  position: absolute;
-}
 
 .sticky {
   display: flex;
   height: 100vh;
-  width: 100%;
+  width: 20%;
+  left: 80%;
+  right: 0;
   align-items: center;
   justify-content: flex-start;
   align-content: flex-start;
   position: fixed;
-  padding: 0;
   z-index: 10;
   background: transparent;
 }
@@ -146,28 +145,6 @@
   font-size: 30px;
 }
 
-.headers {
-  background: linear-gradient(to right, rgba(136,250,168,1), rgba(44,192,255,1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  align-self: center;
-  justify-self: center;
-  font-size: 40px;
-  z-index: 5;
-  margin-top: 5rem;
-}
-
-.skillContainer {
-  height: 180px;
-  width: 180px;
-  background-image: linear-gradient(to right, rgba(136,250,168,1), rgba(44,192,255,1));
-  grid-column: 1/2;
-  grid-row: 3/4;
-  justify-self: center;
-  align-self: center;
-  z-index: 5;
-}
-
 .arrowDownButton {
   width: 120px;
   height: 68.4px;
@@ -178,4 +155,9 @@
   justify-self: center;
   align-self: end;
   animation: 3s bounce infinite;
+}
+
+.skillsContainer {
+  display: flex;
+
 }

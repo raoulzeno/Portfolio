@@ -1,15 +1,15 @@
 import React from "react";
 import { StyledMenu } from "./Menu.styled.tsx";
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
 	return (
 		<StyledMenu open={open}>
-			<a href="#home">Home</a>
-			<a href="#toolbelt">ToolBelt</a>
-			<a href="#toolbelt">Projects</a>
-			<a href="#toolbelt">Blog</a>
-			<a href="#toolbelt">About</a>
-			<a href="#toolbelt">Contact</a>
+			<a href="#home" onClick={() => setOpen(!open)}>Home</a>
+			<a href="#toolbelt" onClick={() => setOpen(!open)}>ToolBelt</a>
+			<a href="#toolbelt" onClick={() => setOpen(!open)}>Projects</a>
+			<a href="#toolbelt" onClick={() => setOpen(!open)}>Blog</a>
+			<a href="#toolbelt" onClick={() => setOpen(!open)}>About</a>
+			<a href="#toolbelt" onClick={() => setOpen(!open)}>Contact</a>
 		</StyledMenu>
 	)
 }

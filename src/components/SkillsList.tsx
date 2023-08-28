@@ -1,12 +1,15 @@
 import React from 'react';
-import Skills from './Skills.tsx';
+import { useState } from "react";
+import Skills from './SkillItem/Skills.tsx';
 import '../containers/App.css';
 
 const SkillsList = () => {
+	const [clicked, setClicked] = useState(false);
+
 	return(
-		
-			<Skills />
-		
+		<div className="skillsContainer"> 
+			<Skills clicked={clicked} setClicked={setClicked}/>
+		</div>
 		)
 }
 

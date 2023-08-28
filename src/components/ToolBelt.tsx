@@ -4,8 +4,7 @@ import '../containers/App.css';
 
 const ToolBelt = () => {
 	return (
-		<div className='toolbeltContainer'>
-			<h1 className='headers' id="toolbelt">ToolBelt</h1>
+		<div className="toolbeltContainer">
 			<SkillsList />
 		</div>
 		)
